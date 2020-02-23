@@ -162,8 +162,9 @@ a{
 .dotline2 img{
     width: 310px;
     position: fixed;
-    right: 40%;
-    top: 39%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .dotline2{
@@ -635,7 +636,7 @@ video{
   width: 90px;
   height: 90px;
   position: fixed;
-  right: 3%;
+  right: 170px;
   bottom: 0;
   opacity: 0.9;
 }
@@ -720,9 +721,14 @@ video{
 
 
 .smole_dot{
+    color: #ffffff;
     left:13%;
 }
+.left_line {
+    border-top: 1px solid #fff;
+}
 .yokomoji{
+    color: #ffffff;
     font-size: 10px;
     margin: -47px 0px 0px 77px;
 }
@@ -741,8 +747,7 @@ video{
     z-index: 99;
 }
 .dotline2 img{
-    top: 37%;
-    left: 22%;
+    top: 360px;
     width: 220px;
 }
 footer{
@@ -806,9 +811,6 @@ footer{
     margin: auto;
 } */
 
-.yokomoji{
-    color: #fff;
-}
 
 .left_line{
 
@@ -818,16 +820,10 @@ footer{
 .left_line2{
     color:#fff;
     } 
-.left_line {
-    border-top: 1px solid #fff;
-}
 .smole_dot {
     left: 13%;
 }
 
-.smole_dot {
-    color: #f9f9f9;
-}
 
 .menu{
     display: none;
@@ -881,10 +877,9 @@ footer{
 }
 #page_top i::before{
     color: #979797;
-    /* right: -370px; */
-    /* bottom: 30px; */
-    left: 59px;
-    bottom: -49px;
+    right: -370px;
+    bottom: 30px;
+    left: -12px;
 }
 #page_top a::after{
     color: #979797;
