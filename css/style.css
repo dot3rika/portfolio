@@ -1,0 +1,925 @@
+@charset "utf-8";
+
+html, body{
+    font-size: 14px;
+    height: 100%;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+
+  }
+p{
+    color: #2d2d2d;
+    font-size: 14px;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+a{
+    color: #2d2d2d;
+    font-size: 14px;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: url(./sapmle.png) no-repeat center center/cover;
+  }
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+  /* .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+    background-size: 4px 4px;
+    z-index: 2;
+  } */
+
+
+
+.container{
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.container.top{
+    position: relative;
+    max-width: 1200px;
+    height: 100%;
+    background: url(../img/back_img.png) 
+    no-repeat center center,#f9f9f9;
+    background-size: cover;
+    margin: auto;
+}
+
+.matome{
+    position: absolute;
+    transform: rotate(-90deg ); 
+    top:113px;
+    left: -50px;
+}
+ .yokomoji{
+    /* top: 100px;
+    left: -20px;
+    transform: rotate(-90deg ); */
+    font-size: 13px;
+    color: #979797;
+    margin: 0px;
+    margin-left: 23px;
+
+}
+
+.left_line{
+    margin: 0px;
+    border-top: 1px solid #979797;
+    width: 239px;
+    /* height: 250px;
+    margin-bottom: 0px;
+    margin-left: 110px; */
+    } 
+.left_line2{
+    margin: 0px;
+    border-top: 1px solid #979797;
+    width: 160px;
+    /* height: 250px;
+    margin-bottom: 0px;
+    margin-left: 110px; */
+    } 
+/* .dot{
+    color: #979797;
+    } */
+
+.smole_dot{
+    /* margin: 0px 0px 0px 0px; */
+    /* left:200px; */
+    color: #979797;
+    margin: 0px;
+    font-size: 23px;
+}
+.matome2{
+    display: flex;
+    align-items: center;
+}
+.menu_line{
+    /* max-width: 1200px; */
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    padding: 0px;
+    top: 90px;
+    right: 0px;
+}
+.menu_line2{
+    /* max-width: 1200px; */
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    padding: 0px;
+    top: 132px;
+    right: 0px;
+}
+.menu_line3{
+    /* max-width: 1200px; */
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    padding: 0px;
+    top: 173px;
+    right: 0px;
+}
+.menu_line4{
+    /* max-width: 1200px; */
+    z-index: 1;
+    position: absolute;
+    text-align: left;
+    padding: 0px;
+    top: 216px;
+    right: 0px;
+}
+.matome3{
+    align-items: center;
+    display: flex;
+    align-items: center;
+    height: 5px;
+}
+.content{
+    width: 225px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dotline2 img{
+    width: 310px;
+    position: fixed;
+    right: 40%;
+    top: 39%;
+}
+
+.dotline2{
+visibility: visible;
+opacity: 1;
+transition: all 0.7s ease;
+}
+
+.dotline2.is_active{
+visibility: hidden;
+opacity: 0;
+}
+
+
+button{
+    position: fixed;
+    border: none;
+    width: 50px;
+    height: 50px;
+    top: 25px;
+    right: 25px;
+    z-index: 999;
+    background: none;
+  }
+  
+  /* 線を引く */
+  button:focus { outline:0; }
+  
+  
+  /* 中央の線 */
+  button span{
+    background: #979797;
+    width: 40px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    top: 18px;
+  }
+  
+  
+  /* 上下の線 */
+  
+  button span:before,
+  button span:after{
+    background: #979797;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  
+  /* 上下の線の位置調整 */
+  
+  button span:before{
+    transform: translate(0,13px);
+    transition:0.3s all;
+  }
+  button span:after{
+    transform: translate(0,-13px);
+    transition:0.3s all;
+  }
+  
+  
+  .is_active button span:before{
+    transform: rotate(-45deg);
+  }
+  .is_active button span{
+    background: rgba(0,0,0,0);
+  }
+  .is_active button span:after{
+    transform: rotate(45deg);
+  }
+
+.menu li {
+    display: list-item;  /* 縦に並べる */
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+.menu{
+    z-index: 2;
+}
+.menu a{
+    text-decoration: none;
+}
+.right_menu .menu a:hover{
+    color: #A34444;
+    text-decoration: none;
+}
+.menu a:visited{
+    color:#788d98;
+}
+
+.right_menu{
+    text-align: right;
+    padding: 51px 44px 0px 0px;
+    line-height: 2em;
+    font-size: 14px;
+}
+.muryo p{
+    font-size:14px;
+    color: #A34444;
+    padding: 0px 0px 12px 0px;
+}
+
+.btn{
+    background-color: #ffffff;
+    color: #979797;
+    width: 207px;
+    display: block;
+    text-align: center;
+    line-height: 44px;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    border: 1px solid #979797;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px #979797;
+}
+.btn{
+    text-decoration:none;
+}
+.btn:hover{
+/*下線を消す*/
+    text-decoration:none;
+    background-color:#979797;
+    color:#ffffff;
+}
+
+/* ナビゲーション */
+
+  .is_active .navigation{
+    display: unset;
+    opacity: 1;
+  }
+  
+  .nav-list{
+      color: #788d98;
+      padding-top: 100px;
+      padding-right: 30px;
+  }
+  
+  .navigation li{
+    margin: 34px 0;
+  }
+  .navigation li a{
+    /* font-family: Montserrat; */
+    font-size: 1.8rem;
+    font-weight: 600;
+    color:#7c7c7c;
+    padding: 5px;
+    text-decoration: none;
+    transition: .3s;
+  }
+
+
+/* footer{
+    max-width: 1200px;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    color:#ffffff;
+    background-color:#ffffff;
+    padding: 0px 0px;
+    height: 50px;
+
+  }
+ 
+  footer small{
+    font-size:12px;
+    justify-content: center;
+    padding-top:2px;
+  }
+  .askl{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+.btn_2 {
+    text-align: right;
+    padding-top: -10px;
+    padding: 10px 7px 0px 0px;
+}
+.btn_3 {
+    text-align: right;
+    padding-top: -10px;
+    padding: 50px 54px 54px 0px;
+}
+
+.insta_btn i{
+    color: #788d98;
+}
+
+.insta_btn i:hover {/*ホバー時*/
+    color:#668ad8;/*文字色*/
+    transition: .5s;/*ゆっくり変化*/
+  }
+.insta_btn:visited{
+    color:#A34444;
+}
+
+.face_btn i{
+    color: #788d98;
+    padding-left: 18px;
+}
+
+.face_btn i:hover {/*ホバー時*/
+    color:#668ad8;/*文字色*/
+    transition: .5s;/*ゆっくり変化*/
+}
+.face_btn:visited{
+    color:#A34444;
+}
+
+/* about___________________________ */
+.content2{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -261px;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+.syoka p{
+    margin-top: -4px;
+    font-size:16px;
+    color: #A34444;
+    padding: 36px 0px 12px 0px;
+}
+.namae p{
+    font-size: 18px;
+    padding: 0px 0px 12px 0px;
+}
+.hiroshima p{
+    font-size: 14px;
+    padding: 0px 0px 52px 0px;
+}
+.gakureki1{
+    padding: 0px 0px 20px 0px;
+    line-height:1.2em;
+}
+.skill{
+    padding-top: 20px;
+    margin-bottom: 156px;
+}
+.skill1 {
+    padding: 0px 0px 12px 0px;
+    line-height:1em;
+}
+.skill2{
+    margin: 20px 20px 0px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}
+.skill3{
+    text-align: center;
+}
+/* contact___________________________ */
+.content3{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -16px;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+.mail p{
+    font-weight: 600;
+    font-size:15px;
+    color: #A34444;
+    padding: 36px 0px 12px 0px;
+}
+.gmail p{
+    padding: 0px 0px 44px 0px;
+    font-size: 18px;
+}
+.ok p{
+    margin: 0px 0px 4px 0px;
+}
+/* works___________________________ */
+.sakuhin{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap:wrap;
+    position: absolute;
+    top: 122px;
+    right: 135px;
+    max-width: 950px;
+}
+
+.sakuhin1{
+    margin: 0px 36px 50px 0px;
+}
+.pegs {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -81px;
+    position: relative;
+    padding: 0px;
+}
+.pegs2{
+    position:absolute;
+    font-size: 18px;
+}
+ .irei{
+    padding: 10px 0px 50px 0px;
+    font-size:12px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top:2px;
+}
+.message{
+    margin-top: 4px;
+}
+.on{
+    margin-bottom: 40px;
+}
+.box7{
+    padding: 0.5em 1em;
+    margin: 0px 0px 44px 0px;
+    color: #788d98;
+    background: whitesmoke;/*背景色*/
+    border-left: double 6px #788d98;/*左線*/
+    font-weight: 400;
+    border-right: double 6px #788d98;/*右線*/
+}
+.box7 a {
+    text-decoration: none;
+    margin: 5px; 
+    padding: 0;
+}
+
+.aboutme img{
+    width: 180px;
+    margin: -15px;
+    margin-top: 40px;
+}
+
+/* ついか */
+
+.container.top {
+    /* position: fixed; */
+    max-width: 1200px;
+    height: 100%;
+    /* background: url(../img/back_img.png) no-repeat center center,#f9f9f9; */
+    background-size: cover;
+    margin: auto;
+    z-index: 9999;
+    background: none;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+#index2{
+    background: url(../img/contact_img.png) no-repeat center center,#f9f9f9;
+    background-size: cover;
+}
+#index5 {
+    background: url(../img/about_img.png) no-repeat center center,#f9f9f9;
+    background-size: cover;
+} 
+.content2{
+    /* padding: 0.5em 1em; */
+    color: #2c2c2f;
+    background-color: rgba( 255, 255, 255, 0.8 );
+}
+
+.modal-wrapper {
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 60px 10px;
+    text-align: center
+  }
+  
+  .modal-wrapper:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+  }
+  
+  .modal-wrapper:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .4s, visibility .4s;
+  }
+  
+  .modal-wrapper::after {
+    display: inline-block;
+    height: 100%;
+    margin-left: -.05em;
+    vertical-align: middle;
+    content: ""
+  }
+  
+  .modal-wrapper .modal-window {
+    box-sizing: content-box;
+    display: inline-block;
+    z-index: 20;
+    position: relative;
+    width: 83%;
+    max-width: 600px;
+    padding: 30px 30px 15px;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+    vertical-align: middle
+  }
+  
+  .modal-wrapper .modal-window .modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .modal-overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8)
+  }
+  
+  .modal-wrapper .modal-close {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    color: #95979c!important;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    text-indent: 0
+  }
+  
+  .modal-wrapper .modal-close:hover {
+    color: #2b2e38!important
+  }
+
+#page_top{
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 3%;
+  bottom: 0;
+  opacity: 0.9;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+}
+#page_top i::before{
+    font-weight: 900;
+    font-size: 28px;
+    color: #788d98;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 10px;
+  right: 17px;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 10px;
+  /* right: 0; */
+  left: 0;
+  margin: auto;
+  text-align: center;
+  color: #788d98;
+}
+
+/* .row p {
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 21px;
+}
+.col-xs-offset-4 {
+    margin-top: -130px;
+}
+.btn4{
+    position: absolute;
+    margin-top: 330px;
+    width: 86%;
+}
+.btn-successs {
+    color: #fff;
+    background-color: #4b638f;
+    border-color: #4cae4c;
+}
+.content4{
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+} */
+.fa-instagram:before {
+    color:#788d98;
+}
+.fa-facebook-square:before {
+    color: #788d98;
+}
+
+
+@media screen and (max-width:600px)
+{
+.navigation {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(220, 220, 220,0.75);
+    /* z-index: 100; */
+    transition: all 0.5s;
+}
+
+
+
+.smole_dot{
+    left:13%;
+}
+.yokomoji{
+    font-size: 10px;
+    margin: -47px 0px 0px 77px;
+}
+/* p.left_line{
+    margin-left: 12%;
+    } */
+.matome2{
+    /* margin: -1px -40px 65px 30px; */
+    margin: -2px -30px 55px 44px;
+}
+.right_menu{
+    line-height: 2.5em;
+    font-size: 12px;
+    padding: 80px 36px 0px 0px;
+    position: relative;
+    z-index: 99;
+}
+.dotline2 img{
+    top: 37%;
+    left: 22%;
+    width: 220px;
+}
+footer{
+
+    height: 92px;
+  }
+.btn_2{
+    color: #7c7c7c;
+    padding: 20px 15px 0px 0px;
+}
+  footer small{
+    font-size:9px;
+    padding: 0px 0px 0px 0px;
+  }
+.muryo p{
+    padding: 0px 0px 12px 0px;
+}
+.face_btn i{
+    padding-left: 22px;
+}
+.menu_line{
+    /* max-width: 1200px; */
+    position: absolute;
+    text-align: left;
+    /* padding: 0px 0px 0px 60%; */
+}
+.left_line2{
+    width: 100px;
+}
+.pegs {
+    padding: 0px 0px 9px 0px;
+}
+
+.pegs2{
+    font-size: 15px;
+}
+.sakuhin{
+    right:unset;
+    margin: -102px 0px;
+}
+.sakuhin{
+    margin: -40px 0px 0px 34px;
+}
+.sakuhin img{
+    width:280px; 
+    height:280px;
+}
+/* .sakuhin1{
+    margin: -135px 0px 164px -95px;
+} */
+.btn_3{
+    padding: 0px 54px 4px 0px;
+}
+/* .container.top{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/back_img2.png) 
+    no-repeat center center,#f9f9f9;
+    background-size: cover;
+    margin: auto;
+} */
+
+.yokomoji{
+    color: #fff;
+}
+
+.left_line{
+
+    color:#fff;
+
+    } 
+.left_line2{
+    color:#fff;
+    } 
+.left_line {
+    border-top: 1px solid #fff;
+}
+.smole_dot {
+    left: 13%;
+}
+
+.smole_dot {
+    color: #f9f9f9;
+}
+
+.menu{
+    display: none;
+}   
+.matome3{
+    display: none
+}
+.aboutme{
+    padding: 168px 0px 0px;
+}
+.contactimg{
+    padding: 120px 0px 0px 0px;
+}
+.face_btn i{
+    padding-left: 32px;
+}
+
+.content2{
+    width: 345px;
+    font-size: 13.5px;
+}
+.namae{
+    font-size: 15px;
+}
+.hiroshima{
+    font-size: 13px;
+}
+.content3{
+    margin-top: 80px;
+    width: 345px;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+}
+.on{
+    width: 300px;
+    text-align: center;
+    line-height: 25px;
+}
+.aboutme img{
+    width: 160px;
+}
+.gakureki{
+    margin: 0px 10px;
+}
+.content2{
+    /* padding: 0.5em 1em; */
+    color: #2c2c2f;
+    background-color: rgba( 255, 255, 255, 0.8 );
+}
+.skill{
+    margin-bottom: 52px;
+}
+#page_top i::before{
+    color: #979797;
+    /* right: -370px; */
+    /* bottom: 30px; */
+    left: 59px;
+    bottom: -49px;
+}
+#page_top a::after{
+    color: #979797;
+    top:108px;
+    font-size: 17px;
+    left:206px;
+    margin: -80px 0px 0px -5px;
+}
+.modal-wrapper .modal-window{
+    padding:34px 26px 13px 24px;
+}
+.fa-instagram:before {
+    color: #7c7c7c;
+}
+.fa-facebook-square:before {
+    color: #7c7c7c;
+}
+
+}
+@media screen and (min-width:600px){
+.navigatio{
+    width: 100%;
+    height: 100%;    
+    display: none
+}
+.nav-list{
+
+    display: none
+}
+#btn{
+    display: none
+}
+/* .dotline img{
+    display: none
+} */
+
+
+}
