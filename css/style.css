@@ -163,7 +163,7 @@ a{
     width: 310px;
     position: fixed;
     top: 45%;
-    left: 50.3%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -306,7 +306,7 @@ button{
   
   .nav-list{
       color: #788d98;
-      padding-top: 100px;
+      padding-top: 80px;
       padding-right: 30px;
   }
   
@@ -747,7 +747,7 @@ video{
     z-index: 99;
 }
 .dotline2 img{
-    top: 280px;
+    top: 360px;
     width: 220px;
 }
 footer{
@@ -756,7 +756,7 @@ footer{
   }
 .btn_2{
     color: #7c7c7c;
-    padding: 20px 15px 0px 0px;
+    padding: 4px 15px 0px 0px;
 }
   footer small{
     font-size:9px;
