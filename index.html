@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     </head>
     <body id=index>
-        <video src="img/back_2.mp4" loop muted autoplay playsinline>
-        </video>
+        <video id="video" loop muted autoplay playsinline></video>
         <div class="container top">
 
 
@@ -128,8 +127,24 @@
          <!-- </div> --> 
 
           </div> 
-</div>
           <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-          <script src="js/script.js"></script>
+          <script src="js/script.js"></script>	      <script src="js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+      <script>
+        if (Hls.isSupported()) {
+          var video = document.getElementById('video');
+          var hls = new Hls();
+          // bind them together
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+            console.log("video and hls.js are now bound together !");
+            hls.loadSource("./img/index.m3u8");
+            hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+              console.log("manifest loaded, found " + data.levels.length + " quality level");
+              video.play()
+            });
+          });
+        }
+      </script>
     </body>
 </html>
