@@ -160,10 +160,14 @@ a{
 }
 
 .dotline2 img{
-    width: 310px;
+    width: 280px;
     position: fixed;
     top: 45%;
+<<<<<<< HEAD
     left: 50%;
+=======
+    left: 50.3%;
+>>>>>>> ce0ad85a041af4abfb1f9f655880da073bc9c90b
     transform: translate(-50%, -50%);
 }
 
@@ -306,7 +310,7 @@ button{
   
   .nav-list{
       color: #788d98;
-      padding-top: 100px;
+      padding-top: 80px;
       padding-right: 30px;
   }
   
@@ -747,7 +751,7 @@ video{
     z-index: 99;
 }
 .dotline2 img{
-    top: 360px;
+    top: 280px;
     width: 220px;
 }
 footer{
@@ -756,7 +760,7 @@ footer{
   }
 .btn_2{
     color: #7c7c7c;
-    padding: 20px 15px 0px 0px;
+    padding: 4px 15px 0px 0px;
 }
   footer small{
     font-size:9px;
