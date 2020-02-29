@@ -7,21 +7,21 @@ body {
   font-weight: 400;
 
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   height: 100%;
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
 }
 body p {
   color: #2d2d2d;
-  font-size: 14px;
+  font-size: 16px;
   font-family: fot-tsukubrdgothic-std, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 body a {
   color: #2d2d2d;
-  font-size: 14px;
+  font-size: 16px;
   font-family: fot-tsukubrdgothic-std, sans-serif;
 
   font-weight: 400;
@@ -80,7 +80,7 @@ video {
   font-size: 13px;
   color: #979797;
   margin: 0px;
-  margin-left: 23px;
+  margin-left: 33px;
 }
 
 .left_line {
@@ -621,7 +621,7 @@ video {
   width: 35px;
   color: #95979c !important;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 35px;
   text-align: center;
   text-decoration: none;
@@ -759,7 +759,7 @@ video {
   }
   .yokomoji {
     color: #ffffff;
-    font-size: 10px;
+    font-size: 11px;
     margin: -47px 0px 0px 77px;
   }
   /* p.left_line{
@@ -890,9 +890,6 @@ video {
   }
   .gakureki {
     margin: 0px 10px;
-  }
-  .stert {
-    margin-left: 4px;
   }
 
   .nenn {
