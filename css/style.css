@@ -416,7 +416,6 @@ button{
 }
 .skill{
     padding-top: 20px;
-    margin-bottom: 156px;
 }
 .skill1 {
     padding: 0px 0px 12px 0px;
@@ -502,9 +501,9 @@ button{
     margin: 0px 0px 44px 0px;
     color: #788d98;
     background: whitesmoke;/*背景色*/
-    border-left: double 6px #788d98;/*左線*/
+    border-left: double 3px #788d98;/*左線*/
     font-weight: 400;
-    border-right: double 6px #788d98;/*右線*/
+    border-right: double 3px #788d98;/*右線*/
 }
 .box7 a {
     text-decoration: none;
