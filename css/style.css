@@ -412,6 +412,7 @@ button{
 .gakureki1{
     padding: 0px 0px 20px 0px;
     line-height:1.2em;
+    text-align: left;
 }
 .skill{
     padding-top: 20px;
@@ -544,13 +545,13 @@ video{
     background-size: cover;
 }
 #index5 {
-    background: url(../img/about_img.png) no-repeat center center,#f9f9f9;
-    background-size: cover;
+    /* background: url(../img/about_img.png) no-repeat center center,#f9f9f9; */
+    /* background-size: cover; */
 } 
 .content2{
     /* padding: 0.5em 1em; */
     color: #2c2c2f;
-    background-color: rgba( 255, 255, 255, 0.8 );
+    /* background-color: rgba( 255, 255, 255, 0.05 ); */
 }
 
 .modal-wrapper {
@@ -691,7 +692,6 @@ video{
     margin:20px 0px 0px 0px;    
     text-align: left;
 }
-
 /* .row p {
     margin-bottom: 14px;
     text-align: center;
@@ -719,10 +719,34 @@ video{
 .fa-facebook-square:before {
     color: #788d98;
 }
+.nenn{
+    color: #A34444;
+}
 
 
 @media screen and (max-width:600px)
 {
+    html, body{
+        font-size: 14px;
+        height: 100%;
+        background-color: #ffffff;
+        background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+        font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    
+      }
+    p{
+        color: #2d2d2d;
+        font-size: 14px;
+        font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    }
+    a{
+        color: #2d2d2d;
+        font-size: 14px;
+        font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    }
+    
+
 .navigation {
     display: none;
     position: fixed;
@@ -869,7 +893,7 @@ footer{
     font-size: 13px;
 }
 .content3{
-    margin-top: 80px;
+    margin-top: 50px;
     width: 345px;
     font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
 }
@@ -884,11 +908,16 @@ footer{
 .gakureki{
     margin: 0px 10px;
 }
-.content2{
-    /* padding: 0.5em 1em; */
-    color: #2c2c2f;
-    background-color: rgba( 255, 255, 255, 0.8 );
+.stert{
+    margin-left: 4px;
 }
+
+.nenn{
+    font-size: 14px;
+    font-weight: 500;
+    color: #A34444;
+}
+
 .skill{
     margin-bottom: 52px;
 }
