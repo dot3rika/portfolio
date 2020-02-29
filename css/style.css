@@ -674,6 +674,23 @@ video{
   text-align: center;
   color: #788d98;
 }
+.setumei {
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+    margin: 40px 20px 64px;
+   text-align: left;
+   letter-spacing: 0.1em; 
+   line-height: 2px;
+   line-height: 17px;   
+}
+.dai{
+    width: 300px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.kaisetu{
+    margin:20px 0px 0px 0px;    
+    text-align: left;
+}
 
 /* .row p {
     margin-bottom: 14px;
