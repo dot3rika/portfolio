@@ -1,39 +1,42 @@
 @charset "utf-8";
 
 html, body{
+    font-family: fot-tsukubrdgothic-std, sans-serif;
+
+    font-weight: 400;
+    
+    font-style: normal;
     font-size: 14px;
     height: 100%;
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
-    font-family: fot-tsukubrdgothic-std, sans-serif;
 
-font-weight: 400;
-
-font-style: normal;
     
 
   }
 p{
     color: #2d2d2d;
     font-size: 14px;
-    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
     font-family: fot-tsukubrdgothic-std, sans-serif;
 
-font-weight: 400;
+    font-weight: 400;
+    
+    font-style: normal;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
 
-font-style: normal;
 }
 a{
     color: #2d2d2d;
     font-size: 14px;
-    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
     font-family: fot-tsukubrdgothic-std, sans-serif;
 
-font-weight: 400;
+    font-weight: 400;
+    
+    font-style: normal;
+    font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
 
-font-style: normal;
 }
 
 .bg-video-wrap {
