@@ -184,8 +184,8 @@ button{
     border: none;
     width: 50px;
     height: 50px;
-    top: 25px;
-    right: 25px;
+    top: 10px;
+    right: 12px;
     z-index: 999;
     background: none;
   }
@@ -197,7 +197,7 @@ button{
   /* 中央の線 */
   button span{
     background: #979797;
-    width: 40px;
+    width: 35px;
     height: 1px;
     display: block;
     position: absolute;
@@ -223,11 +223,11 @@ button{
   /* 上下の線の位置調整 */
   
   button span:before{
-    transform: translate(0,13px);
+    transform: translate(0,9px);
     transition:0.3s all;
   }
   button span:after{
-    transform: translate(0,-13px);
+    transform: translate(0,-9px);
     transition:0.3s all;
   }
   
