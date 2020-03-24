@@ -394,7 +394,7 @@ button span:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -261px;
+  margin-top: -300px;
 }
 .syoka p {
   margin-top: -4px;
@@ -438,7 +438,7 @@ button span:after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -16px;
+  margin-top: -66px;
 }
 .mail p {
   font-weight: 600;
@@ -869,6 +869,7 @@ video {
   .content2 {
     width: 345px;
     font-size: 13.5px;
+    margin-top: -260px;
   }
   .namae {
     font-size: 15px;
